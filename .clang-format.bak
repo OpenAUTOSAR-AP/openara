@@ -1,0 +1,76 @@
+# clang-format 8.0.0
+
+ColumnLimit: 120
+
+# indentation
+AccessModifierOffset: -3
+ConstructorInitializerIndentWidth: 3
+ContinuationIndentWidth: 3
+IndentCaseLabels: false
+IndentWidth: 3
+NamespaceIndentation: None
+TabWidth: 3
+UseTab: Never
+
+
+# alignment
+AlignAfterOpenBracket: Align
+AlignEscapedNewlines: Left
+AlignOperands: true
+AlignTrailingComments: true
+AlignConsecutiveAssignments: true
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortCaseLabelsOnASingleLine: false
+BinPackArguments: false
+BinPackParameters: false
+PackConstructorInitializers: NextLine
+
+# braces
+# BreakBeforeBraces: Allman
+BreakBeforeBraces: Custom
+BraceWrapping:
+   AfterClass: true
+   AfterControlStatement: true
+   AfterEnum: true
+   AfterFunction: true
+   AfterNamespace: true
+   AfterStruct: true
+   AfterExternBlock: false # also prevents extern block indents
+   BeforeCatch: true
+   BeforeElse: true
+   SplitEmptyFunction: true
+   SplitEmptyRecord: true
+   SplitEmptyNamespace: true
+
+# whitespaces
+Cpp11BracedListStyle: false
+SpaceAfterTemplateKeyword: true
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+SpacesInCStyleCastParentheses: true
+SpaceInEmptyParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+BreakBeforeBinaryOperators: None
+AlignOperands: Align
+
+# misc
+AllowShortFunctionsOnASingleLine: InlineOnly
+AlwaysBreakTemplateDeclarations: Yes
+BreakBeforeBinaryOperators: None
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
+BreakBeforeTernaryOperators: true
+PointerAlignment: Left
+FixNamespaceComments: true
+SpaceBeforeCtorInitializerColon: true
+SortIncludes: false
+
+# penalties
+# this decides what order things should be done if a line is too long
+PenaltyExcessCharacter: 50
+PenaltyBreakAssignment: 100
+PenaltyReturnTypeOnItsOwnLine: 100
